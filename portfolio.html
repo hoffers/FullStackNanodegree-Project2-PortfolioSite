@@ -6,46 +6,60 @@
     <title>Yosef's Profile</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/vnd.microsoft.icon">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/stylesheet.css">
   </head>
   <body>
-    <header class="header">
-      <img class="logo" src="img/udacity.svg" alt="Udacity Logo">
-      <section class="about">
-        <h1 class="name">Yosef Hoffman</h1>
-        <h2 class="position">Full-Stack Ninja</h2>
-      </section>
-    </header>
-    <img class="banner" src="img/meta-tag.jpg" alt="Meta Tags">
-    <section class="projects">
-      <h3 class="projects-heading">Featured Work</h3>
-      <article class="project-article">
-        <figure class="project-figure">
-          <img class="project-img" src="img/appify.jpg">
-          <figcaption class="project-caption">
-            <h4 class="project-name">Appify</h4>
-            <a class="project-url" href="https://github.com/udacity/Appify/">https://github.com/udacity/Appify/</a>
-          </figcaption>
-        </figure>
-      </article>
-      <article class="project-article middle">
-        <figure class="project-figure">
-          <img class="project-img" src="img/sunflower.png">
-          <figcaption class="project-caption">
-            <h4 class="project-name">Sunflower</h4>
-            <a class="project-url" href="https://github.com/udacity/Sunflower/">https://github.com/udacity/Sunflower/</a>
-          </figcaption>
-        </figure>
-      </article>
-      <article class="project-article">
-        <figure class="project-figure">
-          <img class="project-img" src="img/bokeh.png">
-          <figcaption class="project-caption">
-            <h4 class="project-name">Bokeh</h4>
-            <a class="project-url" href="https://github.com/udacity/Bokeh/">https://github.com/udacity/Bokeh/</a>
-          </figcaption>
-        </figure>
-      </article>
-    </section>
+    <div class="container">
+      <div class="row">
+        <header class="header col-xs-12">
+          <img class="logo" src="img/udacity.svg" alt="Udacity Logo">
+          <section class="about">
+            <h1 class="name">Yosef Hoffman</h1>
+            <h2 class="position">Full-Stack Ninja</h2>
+          </section>
+        </header>
+      </div>
+      <div class="row">
+        <img class="banner col-xs-12" src="img/meta-tag.jpg" alt="Meta Tags">
+      </div>
+      <div class="row">
+        <section class="projects col-xs-12">
+          <h3 class="projects-heading">Featured Work</h3>
+          <div class="row">
+            <article class="project-article col-xs-12 col-md-6 col-lg-4">
+              <figure class="project-figure">
+                <img class="project-img" src="img/appify.jpg">
+                <figcaption class="project-caption">
+                  <h4 class="project-name">Appify</h4>
+                  <!-- Used p instead of a to satisfy requirement and b/c
+                  link is broken anyway -->
+                  <p class="project-url">https://github.com/udacity/Appify/</p>
+                </figcaption>
+              </figure>
+            </article>
+            <article class="project-article middle col-xs-12 col-md-6 col-lg-4">
+              <figure class="project-figure">
+                <img class="project-img" src="img/sunflower.png">
+                <figcaption class="project-caption">
+                  <h4 class="project-name">Sunflower</h4>
+                  <p class="project-url">https://github.com/udacity/Sunflower/</p>
+                </figcaption>
+              </figure>
+            </article>
+            <article class="project-article col-xs-12 col-md-6 col-lg-4">
+              <figure class="project-figure">
+                <img class="project-img" src="img/bokeh.png">
+                <figcaption class="project-caption">
+                  <h4 class="project-name">Bokeh</h4>
+                  <p class="project-url">https://github.com/udacity/Bokeh/</p>
+                </figcaption>
+              </figure>
+            </article>
+          </div>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
